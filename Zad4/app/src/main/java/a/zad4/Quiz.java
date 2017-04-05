@@ -10,16 +10,34 @@ import android.widget.RadioGroup;
  */
 
 public class Quiz extends Activity {
+    RadioGroup  radioGroup1;
+     RadioButton radiobron1 = (RadioButton) findViewById(R.id.rButton11);
+   RadioButton radiobron2 = (RadioButton) findViewById(R.id.rButton12);
+    RadioButton radiobron3;
 
-    RadioGroup radioGroup1 = (RadioGroup)findViewById(R.id.rGroup1);
-    RadioButton radiobron1 = (RadioButton)findViewById(R.id.rButton11);
-    RadioButton radiobron2 = (RadioButton)findViewById(R.id.rButton12);
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
+       radioGroup1 = (RadioGroup)findViewById(R.id.rGroup1);
+
     }
+
+
+    public void q1()
+    {
+        int zaznaczonyId = radioGroup1.getCheckedRadioButtonId();
+        radiobron3 = (RadioButton)findViewById(zaznaczonyId);
+        int pkt = 0;
+
+        if (radiobron3 == radiobron2)
+        {
+            pkt++;
+        }
+    }
+
+
 
 
 }

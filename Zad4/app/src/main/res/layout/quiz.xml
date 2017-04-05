@@ -1,79 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:stretchColumns="3"
-        android:weightSum="1">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="247dp"
-            android:layout_height="72dp"
-            android:text="quiz"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:gravity="center"
-            />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="247dp"
-            android:layout_height="72dp"
-            android:text="Co to za Bron"
-            android:gravity="center"
-            android:layout_below="@+id/textView2"
-            android:layout_alignLeft="@+id/textView2"
-            android:layout_alignStart="@+id/textView2" />
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/gun"
-            android:id="@+id/imageView2"
-            android:layout_below="@+id/textView3"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            app:srcCompat="@drawable/gun" />
 
         <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rGroup1"
-            android:layout_below="@+id/textView3"
-            android:layout_alignLeft="@+id/imageView2"
-            android:layout_alignStart="@+id/imageView2"
-            android:layout_marginLeft="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="268dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton" />
 
-
-        <RadioButton
-            android:id="@+id/rButton12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="colt 1911"
-            android:layout_alignBaseline="@+id/rButton11"
-            android:layout_alignBottom="@+id/rButton11"
-            android:layout_alignRight="@+id/imageView2"
-            android:layout_alignEnd="@+id/imageView2"
-
-            />
-
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton" />
         </RadioGroup>
 
-        <RadioButton
-            android:id="@+id/rButton11"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Remington1858"
-            android:layout_alignTop="@+id/rGroup1"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="47dp"
-            android:layout_marginEnd="47dp" />
-    </RelativeLayout>
+            app:srcCompat="@drawable/audi" />
+
+    </LinearLayout>
 </ScrollView>
